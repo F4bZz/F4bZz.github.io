@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.title {
+    font-family: "Varela round";
+    font-weight: 300;
+
+}
+
+.subtitle {
+    font-family: "nunito";
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+.paragraph {
+    font-family: "nunito";
+    color:rgb(21, 23, 24);
+    padding-left: 0px;
+}
+
+ol {
+    display: flex;
+    list-style:none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.main-header {
+    background-image: linear-gradient(rgb(60, 176, 230), #205497);
+    width: 100%;
+    height: auto;
+}
+
+.header-title-wrapper {
+    padding: 15px;
+}
+
+.header-title {
+    color:aliceblue;
+}
+
+.header-subtitle {
+    color: rgb(146, 201, 223);
+}
+
+.page-content {
+    width: 100%;
+    height: 100%;
+}
+
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    height: auto;
+
+}
+.footer-title-container {
+    padding: 15px;
+    width: 50%;
+}
+
+.footer-title {
+    color:rgb(73, 73, 73);
+}
+
+.footer-subtitle {
+    color: rgb(104, 104, 104);
+    font-size: 12px;
+}
+
+.create-button-wrapper {
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+}
+
+#create-button {
+    color: azure;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 100%;
+    background-color: #308ecc;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+#create-button:hover {
+    box-shadow: 0 0 15px rgb(103, 181, 255);
+    background-color:  rgb(51, 148, 238);
+}
+
+.page-content {
+    padding: 15px;
+}
+
+.collaborator-number-input {
+    width: 70px;
+}
+
+.work-list {
+    list-style: none;
+    display: flex;
+    
+}
+
+.work-frame-wrapper {
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.work-date-display {
+    color: rgb(116, 116, 116);
+    font-size: 12px;
+    font-family: "Varela round";
+    position: static;
+    margin-top: 10px;
+}
