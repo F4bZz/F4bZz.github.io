@@ -12,7 +12,7 @@ if(params.get('title')){
     }
     alert(JSON.stringify(data))
     localStorage.setItem(id, JSON.stringify(data))
-    window.location.href = './register.html'
+    window.location.href = './index.html'
 }
 history.replaceState({}, "", window.location.pathname)
 function updateCollabList() {
