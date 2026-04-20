@@ -3,17 +3,29 @@
     margin: 0;
 }
 
+:root {
+    --colorA: rgb(7, 7, 10);
+    --colorB: rgb(4, 4, 5);
+    --highlightedText: rgb(238, 238, 238);
+    --semiHighlightedText: rgb(189, 189, 189);
+    --discreteText: rgb(104, 104, 104);
+}
+
+
 body {
     padding: 0;
     margin: 0;
+    background-color: var(--colorB);
 }
 
 .title {
+    color: var(--highlightedText);
     font-family: 'Roboto';
     font-weight: 300;
 }
 
 .subtitle {
+    color: var(--semiHighlightedText);
     font-family: "Inter";
     font-weight: 300;
     padding-left: 10px;
@@ -21,9 +33,10 @@ body {
 
 .paragraph {
     font-family: "Inter";
-    color:rgb(21, 23, 24);
+    color: var(--highlightedText);
     padding-left: 0px;
 }
+
 
 ol {
     display: flex;
@@ -34,7 +47,7 @@ ol {
 }
 
 .main-header {
-    background-image: linear-gradient(rgb(60, 176, 230), #205497);
+    background-color: var(--colorA);
     width: 100%;
     height: auto;
 }
@@ -44,12 +57,10 @@ ol {
 }
 
 .header-title {
-    color:aliceblue;
+    color: var(--highlightedText);
+    font-family: 'Nunito';
 }
 
-.header-subtitle {
-    color: rgb(146, 201, 223);
-}
 
 .page-content {
     width: 100%;
@@ -62,7 +73,7 @@ ol {
     justify-content: space-between;
     position: fixed;
     bottom: 0;
-    background-color: rgb(233, 233, 233);
+    background-color: var(--colorA);
     width: 100%;
     height: auto;
 
@@ -73,11 +84,11 @@ ol {
 }
 
 .footer-title {
-    color:rgb(73, 73, 73);
+   color: var(--highlightedText);
 }
 
 .footer-subtitle {
-    color: rgb(104, 104, 104);
+    color: var(--discreteText);
     font-size: 12px;
 }
 
@@ -93,7 +104,7 @@ ol {
     height: 100%;
     border: none;
     border-radius: 100%;
-    background-color: #308ecc;
+    background-color: #1a3558;
     font-size: 30px;
     transition: 0.5s;
 }
@@ -118,16 +129,15 @@ ol {
 }
 
 .work-frame-wrapper {
-    background-color: #e6e6e6;
+    background-color: var(--colorA);
     padding: 10px;
     border-radius: 10px;
     display: flex;
 }
 
 .work-date-display {
-    color: rgb(116, 116, 116);
+    color: var(--discreteText);
     font-size: 12px;
-    font-family: "Varela round";
     position: static;
     margin-top: 10px;
 }

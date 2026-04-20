@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homestylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap" rel="stylesheet">
@@ -47,7 +47,7 @@
                 <label for="date-input">Data de entrega:</label><br>
                 <input id="date-input" type="date" name="date" required><br>
                 <label for="collaborators">Participantes(grupo)</label><br>
-                <input id="collaborators" type="number">
+                <input id="collaborators" type="number" oninput="updateCollabList(true);">
                 <ol id="collaborators-list"></ol>
                 <input type="submit" id="submit-button">
             </form>
