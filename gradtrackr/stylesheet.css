@@ -37,6 +37,13 @@ body {
     padding-left: 0px;
 }
 
+.discrete {
+    color: var(--discreteText)
+}
+
+header, footer {
+    flex: 0 0 auto;
+}
 
 ol {
     display: flex;
@@ -140,4 +147,24 @@ ol {
     font-size: 12px;
     position: static;
     margin-top: 10px;
+}
+
+.work-list-overflow {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0;
+    padding-bottom: 60px;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.empty-display-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
 }

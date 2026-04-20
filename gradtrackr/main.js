@@ -5,3 +5,7 @@ while(localStorage.getItem(`work${i}`)){
     document.getElementById('work-list').innerHTML += `<div class="work-frame-wrapper"><div class="work-data-container"><h3 class="work-title title" id="title">${work.title}</h3><p class="work-subject subtitle" id="subject">${work.subject}</p><p class="work-date-display subtitle" id="">${'Para '+work.date}</p></div></div>`
     i++
 }
+
+if(i==0){
+    document.getElementById('work-list-overflow').innerHTML += '<div class="empty-display-wrapper"><h5 class="discrete title" style="text-align: center;">Você ainda não tem nenhum trabalho.<br>Crie um novo trabalho e ele aparecerá aqui</h5></div>'
+}

@@ -19,35 +19,35 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="header-title-wrapper">
-            <div class="header-title-container">
-                <h2 class="header-title title">GradeTrackr</h2>
-                <p class="header-subtitle subtitle">Armazenamento de trabalhos pendentes</p>
-            </div>
-        </div>
-    </header>
-    <div class="page-content">
-        <ol id="work-list">
-            <div class="work-frame-wrapper">
-                <div class="work-data-container">
-                    <h3 class="work-title title" id="title">Título</h3>
-                    <p class="work-subject subtitle" id="subject">Matéria</p>
-                    <p class="work-date-display" id="">dd/mm/aaaa</p>
+    <div class="page-wrapper">
+        <header class="main-header">
+            <div class="header-title-wrapper">
+                <div class="header-title-container">
+                    <h2 class="header-title title">GradeTrackr</h2>
+                    <p class="header-subtitle subtitle">Armazenamento de trabalhos pendentes</p>
                 </div>
             </div>
-        </ol>
-        
+        </header>
+        <div class="page-content">
+            <div>
+                <p class="subtitle">Seus trabalhos:</p>
+            </div>
+            <div class="work-list-overflow" id="work-list-overflow">
+                <ol id="work-list">
+                    
+                </ol>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-title-container">
+                <p class="footer-title title">Adicione um trabalho</p>
+                <p class="footer-subtitle subtitle">Adicione um trabalho aqui e ele será salvo até que você o remova</p>
+            </div>
+            <div class="create-button-wrapper">
+                <a href="./create.html"><button id="create-button" class="title">+</button></a>
+            </div>
+        </footer>
+        <script src="./main.js"></script>
     </div>
-    <footer class="main-footer">
-        <div class="footer-title-container">
-            <p class="footer-title title">Adicione um trabalho</p>
-            <p class="footer-subtitle subtitle">Adicione um trabalho aqui e ele será salvo até que você o remova</p>
-        </div>
-        <div class="create-button-wrapper">
-            <a href="./create.html"><button id="create-button" class="title">+</button></a>
-        </div>
-    </footer>
-    <script src="./main.js"></script>
 </body>
 </html>
