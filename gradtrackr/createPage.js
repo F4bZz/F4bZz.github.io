@@ -1,8 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 let collab
 
-console.log(JSON.stringify(localStorage.getItem('work0')))
-
 if (!localStorage.getItem('works')){
     localStorage.setItem('works', '{}')
 }
@@ -16,12 +14,12 @@ if(params.get('title')){
         'date': params.get('date'),
         'collab': 'h'
     }
+    
     let i = 0
     while(localStorage.getItem(`work${i}`)){
         i++
     }
-    
-    alert()
+
     localStorage.setItem(`work${i}`, JSON.stringify(data))
     window.location.href = './index.html'
 }

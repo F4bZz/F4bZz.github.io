@@ -4,8 +4,8 @@
 }
 
 :root {
-    --colorA: rgb(7, 7, 10);
-    --colorB: rgb(4, 4, 5);
+    --colorA: rgb(24, 24, 24);
+    --colorB: rgb(12, 12, 12);
     --highlightedText: rgb(238, 238, 238);
     --semiHighlightedText: rgb(189, 189, 189);
     --discreteText: rgb(104, 104, 104);
