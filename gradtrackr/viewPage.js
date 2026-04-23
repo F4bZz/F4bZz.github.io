@@ -1,5 +1,6 @@
 const params = new URLSearchParams(window.location.search);
+//if(!params.get('wi')){window.location.href = './'}
 
-if(!params.get('title')&&!params.get('subject')){window.location.href = './'}
-document.querySelector('.header-title').innerText = params.get('title')
-document.title = `Visualizando ${params.get('title')}`
+let data = localStorage.getItem(`work${wi}`)
+
+document.title, document.querySelector('.header-title').innerText = `Visualizando ${data.title}`

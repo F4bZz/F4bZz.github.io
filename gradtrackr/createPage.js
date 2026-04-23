@@ -13,7 +13,7 @@ if(params.get('title')){
         'subject': params.get('subject'),
         'date': params.get('date'),
         'collab': 'h',
-        'completed': false
+        'state': 'pending'
     }
     
     let i = 0
